@@ -4,4 +4,9 @@ Thanks @fattire (fat-tire)  @gekkehenkie11  @ZION959
 
 Edited by the AlaskaLinuxUser https://thealaskalinuxuser.wordpress.com
 
+Fixed recents button, now a menu button. Some builds did not like my previous fix, so this works universally. Must run script before compiling: 
+
+
+$ sh ./run_before_compiling.sh 
+
 Fixed recents button, now a menu button.
