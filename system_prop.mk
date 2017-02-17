@@ -1,3 +1,8 @@
+# Art
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-swap=false \
+    ro.sys.fw.dex2oat_thread_count=4
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.speaker=true \
@@ -13,6 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.gapless.enabled=true \
     audio.offload.pcm.16bit.enable=true \
     audio.offload.pcm.24bit.enable=true
+    
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1    
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -21,7 +30,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=1 \
     ro.secwvk=144 \
     ro.sf.lcd_density=560 \
-    ro.opengles.version=196608
+    debug.egl.hw=1 \
+    debug.sf.hw=1 \
+    debug.gralloc.enable_fb_ubwc=1 \
+    persist.hwc.enable_vds \
+    sdm.perf_hint_window=50 \
+    ro.opengles.version=196609 \
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -29,6 +43,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1 \
     ro.qc.sdk.izat.premium_enabled=0 \
     ro.qc.sdk.izat.service_mask=0x0
+    
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
+# Nitz
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3=""
+
+# Qualcomm
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.timed.enable=true \
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so    
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -39,6 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.radio.add_power_save=1 \
     persist.radio.lte_vrat_report=1 \
+    persist.net.doxlat=true \
     ro.telephony.mms_data_profile=5
 
 # Ril
@@ -48,6 +85,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sensors=1
+    
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true    
 
 # USB OTG interface
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -59,3 +100,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.core_ctl_max_cpu=4 \
     ro.min_freq_0=300000 \
     ro.qualcomm.perf.cores_online=2
+    
+# Wifi
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0    
+    
+# Burn-in protection
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.systemui.burn_in_protection=true    

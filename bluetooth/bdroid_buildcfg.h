@@ -20,4 +20,6 @@
 
 #define BTM_DEF_LOCAL_NAME   "Samsung Galaxy Note Edge"
 
+#define BTE_BLE_STACK_CONF_FILE "/etc/bluetooth/bt_stack.conf"
+
 #endif
