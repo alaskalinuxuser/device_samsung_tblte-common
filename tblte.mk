@@ -110,7 +110,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxml2 \
     camera.apq8084 \
-    Snap
+    Snap  
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -285,7 +285,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Common Qualcomm
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
 
-# WJH
+# Extras
 PRODUCT_PACKAGES += \
-    ka \
-    omniswitch 
+    wamaze \
+    wbrowser \
+    womniswitch \
+    wsms \
+    wsatstat \
+    wfd 

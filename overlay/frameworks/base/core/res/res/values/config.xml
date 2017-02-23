@@ -220,7 +220,7 @@
 
     <!-- Is the battery LED intrusive?
          Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+	<add-resource type="bool" name="config_intrusiveBatteryLed">true</add-resource>
 
     <!-- List of paths to serial ports that are available to the serial manager.
          for example, /dev/ttyUSB0
@@ -264,7 +264,7 @@
          This needs to match the constants in
          services/core/java/com/android/server/policy/policy/impl/PhoneWindowManager.java
     -->
-    <integer name="config_longPressOnAppSwitchBehavior">5</integer>
+	<add-resource type="integer" name="config_longPressOnAppSwitchBehavior">5</add-resource>
 
 <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -363,7 +363,7 @@
     <!-- Certain sensor firmwares break with having a batch
          size set. By setting this to false, devices can opt
          out of setting a batch size, which fixes rotation. -->
-    <bool name="config_useDefaultBatchingForAccel">false</bool>
+	<add-resource type="bool" name="config_useDefaultBatchingForAccel">false</add-resource>
 
     <!-- Vibrator pattern for feedback about booting with safe mode disabled -->
     <integer-array name="config_safeModeDisabledVibePattern">
@@ -410,7 +410,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+	<add-resource type="integer" name="config_deviceHardwareKeys">83</add-resource>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -424,7 +424,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">65</integer> 
+	<add-resource type="integer" name="config_deviceHardwareWakeKeys">65</add-resource>
 
     <!-- Enable doze powersaving -->
     <bool name="config_enableWifiDisplay">true</bool>
