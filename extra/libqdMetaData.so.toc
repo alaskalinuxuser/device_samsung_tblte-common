@@ -1,0 +1,26 @@
+ 0x0000000e (SONAME)                     Library soname: [libqdMetaData.so]
+  
+Symbol   contains 22 entries:
+Num:   Type Bind Vis Ndx Name
+0:   NOTYPE LOCAL DEFAULT UND
+1:   FUNC GLOBAL DEFAULT UND __cxa_finalize@LIBC (2)
+2:   FUNC GLOBAL DEFAULT UND __cxa_atexit@LIBC (2)
+3:   FUNC GLOBAL DEFAULT UND __register_atfork@LIBC (2)
+4:   FUNC GLOBAL DEFAULT UND __snprintf_chk@LIBC (2)
+5:   FUNC GLOBAL DEFAULT UND __aeabi_memcpy@LIBC_N (3)
+6:   FUNC GLOBAL DEFAULT UND dladdr@LIBC (4)
+7:   FUNC GLOBAL DEFAULT UND __android_log_print
+8:   FUNC GLOBAL DEFAULT UND __errno@LIBC (2)
+9:   FUNC GLOBAL DEFAULT UND mmap@LIBC (2)
+10:   FUNC GLOBAL DEFAULT UND munmap@LIBC (2)
+11:   FUNC GLOBAL DEFAULT UND __gnu_Unwind_Find_exidx@LIBC_N (3)
+12:   FUNC GLOBAL DEFAULT UND __aeabi_memclr8@LIBC_N (3)
+13:   FUNC GLOBAL DEFAULT UND __stack_chk_fail@LIBC (2)
+14:   OBJECT GLOBAL DEFAULT UND __stack_chk_guard@LIBC (2)
+15:   FUNC GLOBAL DEFAULT UND abort@LIBC (2)
+16:   FUNC GLOBAL DEFAULT UND fprintf@LIBC (2)
+17:   OBJECT GLOBAL DEFAULT UND stderr@LIBC (2)
+18:   FUNC GLOBAL DEFAULT 13 setMetaData
+19:   NOTYPE GLOBAL DEFAULT ABS _end
+20:   NOTYPE GLOBAL DEFAULT ABS _edata
+21:   NOTYPE GLOBAL DEFAULT ABS __bss_start
